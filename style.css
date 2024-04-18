@@ -13,12 +13,12 @@ body{
     color: var(--branco);
     font-family: 'Chakra Petch', sans-serif;
 }
-.conteudo-principal  {
+.conteudo-principal{
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-max-width: 1200;
+max-width: 1200%;
 width: 100%;
 margin: 0 auto;
 }
@@ -49,17 +49,20 @@ margin: 0 auto;
     display: block;
 
 }
-@media screen and (min-width 768px){
+@media screen and (min-width: 768px){
     .botoes{
-        display: flex;
-      
+        display: flex; 
     }
-    .botao :first-child {
-        border-radius: 40px 0 0;
-
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
     }
-    .botao :last-child{
-        border-radius: 0  40px 0 ;
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
     }
 
+}
+.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+    
 }
