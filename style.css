@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 :root {
---cor-de-fundo: #1E1E1E;
---verde: #ffffff;
---branco: #FFFFFF;
---botao-ativo: #b62037;
---botao-inativo: rgba(181, 19, 41, 0.5);
---texto-fundo: rgba(73, 94, 55, 0.3);
+--cor-de-fundo: #010000;
+--verde: #dc1e1e;
+--branco: #ffffff;
+--botao-ativo: #e48181;
+--botao-inativo: rgba(175, 4, 4, 0.5);
+--texto-fundo: rgba(11, 11, 12, 0.3);
 }
 
 body{
@@ -13,24 +13,22 @@ body{
     color: var(--branco);
     font-family: "Chakra Petch", sans-serif;
 }
-.conteudo-principal{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-max-width: 1200%;
-width: 100%;
-margin: 0 auto;
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
-
 .titulo-principal{
     text-align: left;
     width: 100%;
-    font-size:32px;
-
+    font-size: 32px;
 }
 .botao{
-    font-family:"Chakra Petch", sans-serif;
+    font-family: "Chakra Petch",sans-serif;
     background-color: var(--botao-inativo);
     color: var(--branco);
     display: flex;
@@ -43,43 +41,21 @@ margin: 0 auto;
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
     border-top: none;
-
 }
- .botoes{ 
+.botoes{
     display: block;
-
-}
-@media screen and (min-width: 768px){
-    .botoes{
-        display: flex; 
-    }
-    .botao:first-child {
-        border-radius: 40px 0 0 0;
-    }
-    .botao:last-child{
-        border-radius: 0 40px 0 0;
-    }
-
-}
-.ativo{
-    background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
-    
-}
-.abas-texto{
-    background-color: var(--texto-fundo);
-    padding: 40px;
-    border-radius: 0 0 40px 40px;
-
-
 }
 .botao.ativo{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
-
+}
+.abas-textos{
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
 }
 .aba-conteudo.ativo{
-    display: block;
+    display:block;
 }
 .aba-conteudo{
     display: none;
@@ -88,8 +64,21 @@ margin: 0 auto;
     font-size: 28px;
     text-align: center;
 }
-.aba-conteudo-titulo-secudario{
+.aba-conteudo-titulo-secundario{
     text-align: center;
     color: var(--verde);
     text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+    .botoes {
+        display: flex;
+    }
+
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
+
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
 }
